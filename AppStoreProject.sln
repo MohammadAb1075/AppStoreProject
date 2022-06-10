@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStore.ShopProjectUI", "AppStoreProject\AppStore.ShopProjectUI.csproj", "{CC3ACDC4-9E52-4AA3-BB19-3024536E4371}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.Core", "01.Core", "{914327C5-5C69-4E15-A7CB-098BAE92C0A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Infra", "02.Infra", "{CA795C12-6516-4678-8E6D-EF6423D96888}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Framework", "00.Framework", "{8B3BFD71-2D1E-4EFC-B322-5C5C9C4DA9A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Endpoints", "03.Endpoints", "{395F6373-1E33-47C8-B265-79A340BE5A81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStore.Framework", "AppStore.Framework\AppStore.Framework.csproj", "{83647B6A-6097-4530-99FA-1784B6264A7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStore.Domain", "AppStore.Core\AppStore.Domain.csproj", "{371827CC-BE81-4C8C-98A4-17E9AF1FCC37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppStore.Infra.Data.Sql", "AppStore.Infra\AppStore.Infra.Data.Sql.csproj", "{651E3A14-01AB-4FF3-95A9-30DE58EFC342}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC3ACDC4-9E52-4AA3-BB19-3024536E4371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3ACDC4-9E52-4AA3-BB19-3024536E4371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3ACDC4-9E52-4AA3-BB19-3024536E4371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3ACDC4-9E52-4AA3-BB19-3024536E4371}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83647B6A-6097-4530-99FA-1784B6264A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83647B6A-6097-4530-99FA-1784B6264A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83647B6A-6097-4530-99FA-1784B6264A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83647B6A-6097-4530-99FA-1784B6264A7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{371827CC-BE81-4C8C-98A4-17E9AF1FCC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{371827CC-BE81-4C8C-98A4-17E9AF1FCC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{371827CC-BE81-4C8C-98A4-17E9AF1FCC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{371827CC-BE81-4C8C-98A4-17E9AF1FCC37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{651E3A14-01AB-4FF3-95A9-30DE58EFC342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{651E3A14-01AB-4FF3-95A9-30DE58EFC342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{651E3A14-01AB-4FF3-95A9-30DE58EFC342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{651E3A14-01AB-4FF3-95A9-30DE58EFC342}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CC3ACDC4-9E52-4AA3-BB19-3024536E4371} = {395F6373-1E33-47C8-B265-79A340BE5A81}
+		{83647B6A-6097-4530-99FA-1784B6264A7C} = {8B3BFD71-2D1E-4EFC-B322-5C5C9C4DA9A7}
+		{371827CC-BE81-4C8C-98A4-17E9AF1FCC37} = {914327C5-5C69-4E15-A7CB-098BAE92C0A8}
+		{651E3A14-01AB-4FF3-95A9-30DE58EFC342} = {CA795C12-6516-4678-8E6D-EF6423D96888}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84290C29-4575-42B1-BB02-8AC7C33139E0}
+	EndGlobalSection
+EndGlobal
