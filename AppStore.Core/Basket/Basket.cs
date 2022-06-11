@@ -30,7 +30,7 @@ namespace AppStore.Domain.Basket
         }
         public virtual void Remove(Product product) => _items.RemoveAll(c=> c.Product?.Id == product.Id);
         public virtual int TotalPrice() => _items.Sum(c => c.Product.Price * c.Quantity);
-        public virtual void Cleaar() => _items.Clear();
+        public virtual void Clear() => _items.Clear();
         public IEnumerable<BasketItem> Items => _items;
 
     }
