@@ -7,8 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Components\" />
-    <Folder Include="Infrastructures\" />
+    <ProjectReference Include="..\AppStore.Core\AppStore.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Basket\" />
+    <Folder Include="Views\Category\" />
+    <Folder Include="Views\Order\" />
   </ItemGroup>
 
 </Project>
