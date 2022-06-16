@@ -19,26 +19,26 @@ namespace AppStore.ShopProjectUI.Infrastructures
         [ViewContext]
         [HtmlAttributeNotBound]
         public ViewContext ViewContext { get; set; }
-        public PageInfo PageInfo { get; set; }
+        public PageInfo PageModel { get; set; }
         public string PageAction { get; set; }
+        public bool PageClassesEnabled { get; set; } = false;
         public string PageClass { get; set; }
         public string PageClassNormal { get; set; }
         public string PageClassSelected { get; set; }
-        public bool PageClassesEnabled { get; set; } = false;
 
         public override void Process(TagHelperContext context, TagHelperOutput output)
         {
             IUrlHelper urlHelper = _urlHelperFactory.GetUrlHelper(ViewContext);
             TagBuilder result = new("div");
 
-            for (int i = 1; i <= PageInfo.PageCount; i++)
+            for (int i = 1; i <= PageModel.PageCount; i++)
             {
                 TagBuilder tag = new("a");
                 tag.Attributes["href"] = urlHelper.Action(PageAction, new { pageNumber = i });
                 if (PageClassesEnabled)
                 {
                     tag.AddCssClass(PageClass);
-                    tag.AddCssClass(i == PageInfo.PageNumber ? PageClassSelected : PageClassNormal);
+                    tag.AddCssClass(i == PageModel.PageNumber ? PageClassSelected : PageClassNormal);
                 }
                 tag.InnerHtml.Append(i.ToString());
                 result.InnerHtml.AppendHtml(tag);

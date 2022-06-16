@@ -1,8 +1,8 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model ProductListViewModel
+<h1>Wellcome to ASP.NET Core 06</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@foreach (var item in Model.Data.Data)
+{
+    @Html.Partial("ProductSummary",item)
+}
+<div class="btn-group m-1" page-model="Model.Data.PageInfo" page-action="Index" page-classes-enabled="true" page-class="btn" page-class-normal="btn-outline-dark" page-class-selected="btn-success"></div>

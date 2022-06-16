@@ -2,11 +2,6 @@
 using AppStore.Domain.Orders;
 using AppStore.Domain.Products;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AppStore.Infra.Data.Sql.Common
 {
@@ -99,7 +94,7 @@ namespace AppStore.Infra.Data.Sql.Common
                     new Product
                     {
                         Id = 6,
-                        CategoryId = 1,
+                        CategoryId = 3,
                         Name = "MSI",
                         Description = "MSI",
                         Price = 60000000
