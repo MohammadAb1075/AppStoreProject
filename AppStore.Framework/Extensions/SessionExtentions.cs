@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
 using System.Text;
 using System.Text.Json;
 
@@ -13,7 +14,8 @@ namespace AppStore.Framework.Extentions
                 {
                     WriteIndented = true,
                 };
-            session.SetString(key, JsonSerializer.Serialize(value: value, options: options));
+            session.SetString(key, System.Text.Json.JsonSerializer.Serialize(value: value, options: options));
+            //session.SetString(key, JsonSerializer.Serialize(value: value));
         }
         public static T GetJson<T>(this ISession session, string key)
         {
@@ -23,7 +25,9 @@ namespace AppStore.Framework.Extentions
             {
                 return default(T);
             }
-            return JsonSerializer.Deserialize<T>(json: jsonObject);
+
+            //return JsonSerializer.Deserialize<T>(json: jsonObject);
+            return JsonConvert.DeserializeObject<T>(jsonObject);
         }
     }
 }
